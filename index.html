@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADVENTURE</title>
+    <!-- ==== CSS ==== -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1 class="logo">COFFEE</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="#"></a>Home</li>
+            <li><a href="#"></a>Shop </li>
+            <li><a href="#"></a>Explore</li>
+            <li><a href="#"></a>About</li>
+            <li class="ctn"><a href="#"></a>content</li>
+        </ul>
+        <img src="./img/menu-btn.png" alt="" class="menu-btn" />
+
+    </nav>
+
+    <header>
+          <div class="header-content">
+                <h2>Discover the Perfect Brew</h2>
+                <div class="line"></div>
+                <h1>INDULGE IN COFFEE BLISS</h1>
+              <a href="#" class="ctn">Learn More</a>
+          </div>
+    </header>
+
+    <!-- == Coffee Tasting Events == -->
+    <section class="events">
+        <div class="title">
+            <h1>Upcoming Coffee Tasting Events</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img class="event-img" src="./img/coffee-event1.jpg" alt="Coffee Tasting Event 1">
+                <h4>Coffee Connoisseurs Gathering</h4>
+                <p>Join us for an exquisite journey through the world of coffee. Discover unique flavors and brewing techniques that will tantalize your taste buds.</p>
+                <br />
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+
+            <div class="col">
+                <img class="event-img" src="./img/coffee-event2.jpg" alt="Coffee Tasting Event 2">
+                <h4>Artisanal Coffee Workshop</h4>
+                <p>Immerse yourself in the art of coffee craftsmanship. Learn from expert baristas and explore the nuances of brewing methods and latte art.</p>
+                <br />
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="explore">
+        <div class="explore-content">
+            <h1>DISCOVER OUR COFFEE ORIGINS</h1>
+            <div class="line"></div>
+            <p>Embark on a journey through the rich coffee origins of the world. From the highlands of Ethiopia to the vibrant plantations of Colombia, explore the diverse flavors and stories behind each cup.</p>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </section>
+    
+
+    <section class="tours">
+        <div class="row">
+            <div class="col content-col">
+                <h1>DISCOVER OUR COFFEE TOURS & DESTINATIONS</h1>
+                <div class="line"></div>
+                <p>Embark on a coffee adventure with our curated tours and explore the fascinating journey from bean to cup. Experience the sights, aromas, and flavors of coffee culture in diverse destinations.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>            
+            <div class="col image-col">
+                  <div class="image-gallery">
+                      <img src="./img/img3.avif" alt="">
+                      <img src="./img/img4.avif" alt="">
+                      <img src="./img/img1.avif" alt="">
+                      <img src="./img/img2.avif" alt="">
+                  </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p>123 Fifth Avenue, NY 10160, New York, USA | Phone: 800-123-456 | Email: contact@example.com</p>
+        <p>Copyright © 2020 Outdoor Adventure</p>            
+    </section>
+
+    <script>
+        const menuBtn =  document.querySelector('.menu-btn');
+        const navlinks = document.querySelector('.nav-links');
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>
